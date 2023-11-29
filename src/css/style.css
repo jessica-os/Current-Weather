@@ -1,0 +1,116 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--Lavander), var(--Clean-Blue));
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  color: var(--White);
+  background-color: var(--Lavander);
+  box-shadow: var(--Shadow) 0px 3px 8px;
+  border-radius: 20px;
+}
+.container .title {
+  font-size: 23px;
+  margin-bottom: 40px;
+  color: var(--Dark-Blue);
+}
+.containerInput {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.containerInput input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  outline: none;
+  border: 2px solid var(--White);
+  background-color: var(--Clean-Blue);
+  color: var(--Dark-Blue);
+}
+.container .button {
+  color: var(--Lavander);
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Clean-Blue);
+  cursor: pointer;
+  border: 2px solid var(--White);
+  padding: 8px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.container input::placeholder {
+  color: var(--Lavander);
+}
+.container .button:hover {
+  transform: scale(1.1);
+}
+.container .searchResult {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+.searchResult .cityArea {
+  margin-top: 15px;
+
+}
+.searchResult .cityArea .city {
+  margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: 600;
+}
+.container .searchResult .temperature {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--Dark-Blue);
+}
+.container .searchResult .weather {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.container .searchResult .weatherDetails {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--Dark-Blue);
+  align-items: center;
+}
+.weatherArea{
+  display: flex;
+  flex-direction: column;
+}
+.weatherArea .icon{
+  width: 50px;
+  margin: auto;
+  
+}
+.weatherDetails .description {
+  display: flex;
+  align-items: center;
+
+}
+
+@media (max-width: 530px) {
+  .container {
+    margin: 50px;
+    padding: 20px;
+  }
+  .container .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .searchResult .weatherDetails {
+    font-size: 13px;
+  }
+}
